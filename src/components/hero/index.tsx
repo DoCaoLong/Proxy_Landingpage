@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../atoms/container";
 
 // Kiểu cho các props của Feature component
 interface FeatureProps {
@@ -13,7 +14,7 @@ const HeroSection: React.FC = () => (
       <p>Residential Proxies P2P</p>
       <p className="mt-2">Share internet and make money online</p>
     </h1>
-    <p className="mt-4 max-w-2xl mx-auto text-white text-size-normal">
+    <p className="mt-4 max-w-2xl mx-auto text-white text-base font-light">
       We offer the world's leading proxy exchange platform with support for P2P
       connections. Share Your Internet and Make Money Online Easily.
     </p>
@@ -25,7 +26,7 @@ const HeroSection: React.FC = () => (
 
 const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
   <div className="flex justify-center gap-x-[20px] items-start">
-    <div className="inline-block p-4 rounded-full">{icon}</div>
+    <div className="inline-block p-4 rounded-full relative -top-4">{icon}</div>
     <div>
       <h6 className="text-H6 text-lg font-semibold text-white">{title}</h6>
       <p className="mt-[8px] text-small text-white">{description}</p>
@@ -34,7 +35,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
 );
 
 const FeaturesSection: React.FC = () => (
-  <section className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4 px-4">
+  <section className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
     <Feature
       icon={
         <svg
@@ -113,9 +114,11 @@ const FeaturesSection: React.FC = () => (
 );
 
 const Hero: React.FC = () => (
-  <div className="from-pink-500 via-orange-500 to-red-500 bg-no-repeat bg-top bg-cover bg-hero-pattern min-h-[722px] overflow-hidden">
-    <HeroSection />
-    <FeaturesSection />
+  <div className="from-pink-500 via-orange-500 to-red-500 bg-no-repeat bg-top bg-cover bg-hero-pattern min-h-[45.125rem]">
+    <Container>
+      <HeroSection />
+      <FeaturesSection />
+    </Container>
   </div>
 );
 

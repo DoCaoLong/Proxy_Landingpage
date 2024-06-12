@@ -104,14 +104,19 @@ export default function UseCase() {
         </div>
         <div
           className={
-            "flex lg:flex-row flex-col justify-between mt-[60px] gap-[3.75rem] w-full"
+            "flex lg:flex-row lg:items-center flex-col justify-between mt-[60px] lg:gap-[5rem] gap-[3.75rem] w-full"
           }
         >
-          <div className={"flex-shrink-0"}>
+          <div className={"flex-shrink-0 relative"}>
             <SvgIcon
               src={Frame95}
               alt={"frame"}
               className="aspect-[282/230] h-auto max-h-[230px] w-full lg:max-w-[282px] object-contain"
+            />
+            <img
+              src="/proxy-decor.svg"
+              alt="decor"
+              className="hidden lg:block absolute left-full translate-x-1/2 top-0"
             />
           </div>
           <div></div>

@@ -35,7 +35,7 @@ const menuLinks = [
 export default function Header() {
   return (
     <header className="from-pink-500 via-orange-500 to-red-500 bg-no-repeat bg-top bg-cover bg-hero-pattern center fixed left-0 right-0 text-size-normal flex justify-center items-center px-[40px] py-[16px] z-[999]">
-      <div className="w-full gap-4 flex justify-between items-center">
+      <div className="gap-4 flex justify-between items-center w-full max-w-[77.5rem] px-[1.25rem] mx-auto">
         <a href="/" className="text-2xl font-bold text-white cursor-pointer">
           Proxy
         </a>
