@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../css/font/Inter.ttf") format("opentype");
+}
+
+* {
+  /* border: 1px solid red; */
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  font-size: 12px;
+
+  @media (min-width: theme("screens.md")) {
+    font-size: 14px;
+  }
+
+  @media (min-width: theme("screens.lg")) {
+    font-size: 16px;
+  }
+}
+
+/*
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --background-disabled: #e9ebec;
+    --color-disabled-input: #8b939e;
+    --error-color: #dc2626;
+    --success-color: #36b37e;
+    --warning-color: #f39200;
+}
+
+@layer components {
+    .layout-title {
+        @apply px-[var(--mag-spacing-24)] bg-red;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background-color: var(--mag-colors-neutral-100, '#F9F9F9');
+    height: 100%;
+    width: 100%;
+}
+ */
+
+button {
+  cursor: pointer;
+}
