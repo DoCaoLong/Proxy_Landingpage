@@ -13,40 +13,40 @@ import AboutUs from "./components/organism/about-us/index.tsx";
 // import SignUpForm from "./components/signUp/index.tsx";
 
 const App = () => {
-  return (
-    <div className="w-full min-h-[100vh] center">
-      <Header />
-      <Hero />{" "}
-      <main>
-        <Container>
-          <Feature />
-        </Container>
+    return (
+        <div className="w-full min-h-[100vh] center">
+            <Header />
+            <Hero />{" "}
+            <main>
+                <Container>
+                    <Feature />
+                </Container>
 
-        <Container>
-          <SectionPricing />
-        </Container>
+                <Container>
+                    <SectionPricing />
+                </Container>
 
-        <SectionLocation />
+                <SectionLocation />
 
-        <Container>
-          <UseCase />
-        </Container>
+                <Container>
+                    <UseCase />
+                </Container>
 
-        <Container>
-          <ProxyApp />
-        </Container>
+                <Container>
+                    <ProxyApp />
+                </Container>
 
-        <AboutUs />
+                <AboutUs />
 
-        <Container>
-          <ContactUs />
-        </Container>
-      </main>
-      {/* <LoginForm /> */}
-      {/* <SignUpForm /> */}
-      <Footer />
-    </div>
-  );
+                <Container>
+                    <ContactUs />
+                </Container>
+            </main>
+            {/* <LoginForm /> */}
+            {/* <SignUpForm /> */}
+            <Footer />
+        </div>
+    );
 };
 
 export default App;
