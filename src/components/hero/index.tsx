@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../atoms/container";
+import ContainerHero from "../atoms/container-hero";
 
 // Kiểu cho các props của Feature component
 interface FeatureProps {
@@ -118,10 +119,10 @@ const FeaturesSection: React.FC = () => (
 
 const Hero: React.FC = () => (
     <div className="from-pink-500 via-orange-500 to-red-500 bg-no-repeat bg-top bg-cover bg-hero-pattern min-h-[100vh] relative z-10">
-        <Container>
+        <ContainerHero>
             <HeroSection />
             <FeaturesSection />
-        </Container>
+        </ContainerHero>
     </div>
 );
 
