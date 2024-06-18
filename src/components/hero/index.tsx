@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => (
 );
 
 const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
-    <div className="flex justify-center gap-x-[20px] items-start">
+    <div className="flex md:justify-center gap-x-[20px] md:items-start">
         <div className="inline-block rounded-full relative">{icon}</div>
         <div>
             <h6 className="text-H6 text-lg font-semibold text-white">
@@ -39,7 +39,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
 );
 
 const FeaturesSection: React.FC = () => (
-    <section className="mt-[24px] md:mt-[128px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
+    <section className="md:absolute md:left-1/2 md:-translate-x-1/2 md:w-[1200px] w-full md:bottom-[100px] mt-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <Feature
             icon={
                 <svg
@@ -118,7 +118,7 @@ const FeaturesSection: React.FC = () => (
 );
 
 const Hero: React.FC = () => (
-    <div className="from-pink-500 via-orange-500 to-red-500 bg-no-repeat bg-top bg-cover bg-hero-pattern min-h-[100vh] relative z-10">
+    <div className="from-pink-500 via-orange-500 to-red-500 bg-no-repeat bg-bottom bg-cover bg-hero-pattern min-h-[100vh] relative z-10">
         <ContainerHero>
             <HeroSection />
             <FeaturesSection />
