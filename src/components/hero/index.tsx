@@ -10,8 +10,8 @@ interface FeatureProps {
 }
 
 const HeroSection: React.FC = () => (
-    <section className="text-center px-4 custom-padding">
-        <h1 className="text-5xl max-w-[68.75rem] mx-auto font-bold text-white">
+    <section className="text-center px-4 custom-padding mb-4 xl:mb-8">
+        <h1 className="text-5xl max-w-[68.75rem] mx-auto font-bold text-white mb-7">
             <p>Residential Proxies P2P</p>
             <p className="mt-2">Share internet and make money online</p>
         </h1>
@@ -39,7 +39,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
 );
 
 const FeaturesSection: React.FC = () => (
-    <section className="md:absolute md:left-1/2 md:-translate-x-1/2 md:w-[1200px] w-full md:bottom-[100px] mt-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="md:absolute relative md:left-1/2 md:-translate-x-1/2 lg:w-[1200px] w-full md:bottom-[100px] mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-4">
         <Feature
             icon={
                 <svg
